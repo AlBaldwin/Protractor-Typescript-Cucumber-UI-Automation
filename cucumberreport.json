@@ -1,0 +1,331 @@
+[
+  {
+    "description": "   Feature Description",
+    "keyword": "Feature",
+    "name": "Angular search text box",
+    "line": 1,
+    "id": "angular-search-text-box",
+    "tags": [],
+    "uri": "features\\angularJsSearch.feature",
+    "elements": [
+      {
+        "id": "angular-search-text-box;angular-search-text-box",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Angular search text box",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "a web browser is on the Angular Js website",
+            "match": {
+              "location": "stepDefinitions\\angularSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1189000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user clicks the header link",
+            "match": {
+              "location": "stepDefinitions\\angularSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user is directed to the angular features page",
+            "match": {
+              "location": "stepDefinitions\\angularSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user enters \"Cheat sheet\" in the search box",
+            "match": {
+              "location": "stepDefinitions\\angularSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the link \"Cheat Sheet\" is returned",
+            "match": {
+              "location": "stepDefinitions\\angularSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2217000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "   Add minus and times functionality",
+    "keyword": "Feature",
+    "name": "Calculator",
+    "line": 1,
+    "id": "calculator",
+    "tags": [],
+    "uri": "features\\calculator.feature",
+    "elements": [
+      {
+        "id": "calculator;calculator-add-function",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Calculator Add function",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "a web browser is on the calculation website",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user adds two numbers \"3\" and \"5\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 310000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the output displays \"8\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2144000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calculator;calculator-minus-function",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Calculator minus function",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "a web browser is on the calculation website",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the user subtracts two numbers \"16\" and \"1\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the output displays \"15\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1853000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2665000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calculator;calculator-times-function",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Calculator times function",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "a web browser is on the calculation website",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user multiplies two numbers \"2\" and \"16\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the output displays \"32\"",
+            "match": {
+              "location": "stepDefinitions\\calculatorSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1857000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2155000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
