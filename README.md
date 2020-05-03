@@ -17,7 +17,6 @@ Capturing Screenshots
 
 TODO: Continuous integration with Jenkins
 
-
-
-
+import { ElementFinder, element, by, browser } from "protractor";
+import { CalculatorSelectors } from "../locators/pageObjects";
 
