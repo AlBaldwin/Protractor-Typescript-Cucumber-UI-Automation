@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1189000000
+              "duration": 1186000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1581000000
+              "duration": 1610000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 370000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 102000000
             }
           },
           {
@@ -78,7 +78,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 467000000
+              "duration": 473000000
             }
           },
           {
@@ -95,11 +95,11 @@
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2217000000
+              "duration": 2683000000
             }
           }
         ]
@@ -129,11 +129,11 @@
             "line": 7,
             "name": "a web browser is on the calculation website",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:10"
+              "location": "stepDefinitions\\calculatorSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1280000000
+              "duration": 1300000000
             }
           },
           {
@@ -142,11 +142,11 @@
             "line": 8,
             "name": "the user adds two numbers \"3\" and \"5\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:14"
+              "location": "stepDefinitions\\calculatorSteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 312000000
             }
           },
           {
@@ -155,11 +155,11 @@
             "line": 9,
             "name": "the output displays \"8\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:32"
+              "location": "stepDefinitions\\calculatorSteps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1859000000
+              "duration": 1856000000
             }
           },
           {
@@ -169,19 +169,18 @@
               "location": "stepDefinitions\\hooks.ts:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2144000000
+              "duration": 2718000000
             }
           }
         ]
@@ -200,11 +199,11 @@
             "line": 13,
             "name": "a web browser is on the calculation website",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:10"
+              "location": "stepDefinitions\\calculatorSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1196000000
+              "duration": 1205000000
             }
           },
           {
@@ -213,11 +212,11 @@
             "line": 14,
             "name": "the user subtracts two numbers \"16\" and \"1\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:20"
+              "location": "stepDefinitions\\calculatorSteps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 311000000
+              "duration": 326000000
             }
           },
           {
@@ -226,11 +225,11 @@
             "line": 15,
             "name": "the output displays \"15\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:32"
+              "location": "stepDefinitions\\calculatorSteps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1853000000
+              "duration": 1864000000
             }
           },
           {
@@ -247,11 +246,11 @@
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2665000000
+              "duration": 2612000000
             }
           }
         ]
@@ -270,11 +269,11 @@
             "line": 19,
             "name": "a web browser is on the calculation website",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:10"
+              "location": "stepDefinitions\\calculatorSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1223000000
+              "duration": 1231000000
             }
           },
           {
@@ -283,11 +282,11 @@
             "line": 20,
             "name": "the user multiplies two numbers \"2\" and \"16\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:26"
+              "location": "stepDefinitions\\calculatorSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 307000000
+              "duration": 312000000
             }
           },
           {
@@ -296,11 +295,11 @@
             "line": 21,
             "name": "the output displays \"32\"",
             "match": {
-              "location": "stepDefinitions\\calculatorSteps.ts:32"
+              "location": "stepDefinitions\\calculatorSteps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1857000000
+              "duration": 1859000000
             }
           },
           {
@@ -317,11 +316,11 @@
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2155000000
+              "duration": 2652000000
             }
           }
         ]

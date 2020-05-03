@@ -1,31 +1,57 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
+const pageObjects_1 = require("../locators/pageObjects");
 class Calculator {
     navigateTo() {
-        return protractor_1.browser.get('https://juliemr.github.io/protractor-demo/');
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.browser.get('https://juliemr.github.io/protractor-demo/');
+        });
     }
     firstEditBox(value) {
-        return protractor_1.element(protractor_1.by.model("first")).sendKeys(value);
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.model(pageObjects_1.CalculatorSelectors.FIRST_EDIT_BOX)).sendKeys(value);
+        });
     }
     secondEditBox(value) {
-        return protractor_1.element(protractor_1.by.model("second")).sendKeys(value);
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.model(pageObjects_1.CalculatorSelectors.SECOND_EDIT_BOX)).sendKeys(value);
+        });
     }
     go() {
-        return protractor_1.element(protractor_1.by.id("gobutton")).click();
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.id(pageObjects_1.CalculatorSelectors.GO_BUTTON)).click();
+        });
     }
     getResult() {
-        return protractor_1.element(protractor_1.by.css("td:nth-child(3)")).getText();
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield protractor_1.element(protractor_1.by.css(pageObjects_1.CalculatorSelectors.GET_RESULT)).getText();
+        });
     }
     add() {
-        return protractor_1.element(protractor_1.by.model("operator")).element(protractor_1.by.css('[value="ADDITION"]')).click();
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.model(pageObjects_1.CalculatorSelectors.OPPERATOR)).element(protractor_1.by.css(pageObjects_1.CalculatorSelectors.ADDITION)).click();
+        });
     }
     subtract() {
-        return protractor_1.element(protractor_1.by.model("operator")).element(protractor_1.by.css('[value="SUBTRACTION"]')).click();
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.model(pageObjects_1.CalculatorSelectors.OPPERATOR)).element(protractor_1.by.css(pageObjects_1.CalculatorSelectors.SUBSTRACTION)).click();
+        });
     }
     multiply() {
-        return protractor_1.element(protractor_1.by.model("operator")).element(protractor_1.by.css('[value="MULTIPLICATION"]')).click();
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(protractor_1.by.model(pageObjects_1.CalculatorSelectors.OPPERATOR)).element(protractor_1.by.css(pageObjects_1.CalculatorSelectors.MULTIPLICATION)).click();
+        });
     }
 }
 exports.Calculator = Calculator;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FsY3VsYXRvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3BhZ2VPYmplY3RzL2NhbGN1bGF0b3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwyQ0FBaUU7QUFFakUsTUFBYSxVQUFVO0lBR25CLFVBQVU7UUFDTixPQUFPLG9CQUFPLENBQUMsR0FBRyxDQUFDLDRDQUE0QyxDQUFpQixDQUFDO0lBQ25GLENBQUM7SUFFSCxZQUFZLENBQUMsS0FBSztRQUNkLE9BQU8sb0JBQU8sQ0FBQyxlQUFFLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBaUIsQ0FBQztJQUN0RSxDQUFDO0lBQ0QsYUFBYSxDQUFDLEtBQUs7UUFDZixPQUFPLG9CQUFPLENBQUMsZUFBRSxDQUFDLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQWlCLENBQUM7SUFDdkUsQ0FBQztJQUNELEVBQUU7UUFDRSxPQUFPLG9CQUFPLENBQUMsZUFBRSxDQUFDLEVBQUUsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBa0IsQ0FBQztJQUM5RCxDQUFDO0lBRUQsU0FBUztRQUNMLE9BQU8sb0JBQU8sQ0FBQyxlQUFFLENBQUMsR0FBRyxDQUFDLGlCQUFpQixDQUFDLENBQUMsQ0FBQyxPQUFPLEVBQWtCLENBQUM7SUFDeEUsQ0FBQztJQUVELEdBQUc7UUFDQyxPQUFPLG9CQUFPLENBQUMsZUFBRSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxlQUFFLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLENBQUMsQ0FBQyxLQUFLLEVBQWtCLENBQUM7SUFDdkcsQ0FBQztJQUVELFFBQVE7UUFDSixPQUFPLG9CQUFPLENBQUMsZUFBRSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxlQUFFLENBQUMsR0FBRyxDQUFDLHVCQUF1QixDQUFDLENBQUMsQ0FBQyxLQUFLLEVBQWtCLENBQUM7SUFDMUcsQ0FBQztJQUNELFFBQVE7UUFDSixPQUFPLG9CQUFPLENBQUMsZUFBRSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxlQUFFLENBQUMsR0FBRyxDQUFDLDBCQUEwQixDQUFDLENBQUMsQ0FBQyxLQUFLLEVBQWtCLENBQUM7SUFDN0csQ0FBQztDQUdKO0FBakNELGdDQWlDQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FsY3VsYXRvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3BhZ2VPYmplY3RzL2NhbGN1bGF0b3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSwyQ0FBaUU7QUFDakUseURBQThEO0FBRTlELE1BQWEsVUFBVTtJQUdiLFVBQVU7O1lBQ2IsTUFBTSxvQkFBTyxDQUFDLEdBQUcsQ0FBQyw0Q0FBNEMsQ0FBQyxDQUFDO1FBQ2pFLENBQUM7S0FBQTtJQUVHLFlBQVksQ0FBQyxLQUFhOztZQUM1QixNQUFNLG9CQUFPLENBQUMsZUFBRSxDQUFDLEtBQUssQ0FBQyxpQ0FBbUIsQ0FBQyxjQUFjLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNoRixDQUFDO0tBQUE7SUFFSyxhQUFhLENBQUMsS0FBYTs7WUFDN0IsTUFBTSxvQkFBTyxDQUFDLGVBQUUsQ0FBQyxLQUFLLENBQUMsaUNBQW1CLENBQUMsZUFBZSxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDakYsQ0FBQztLQUFBO0lBRUssRUFBRTs7WUFDSixNQUFNLG9CQUFPLENBQUMsZUFBRSxDQUFDLEVBQUUsQ0FBQyxpQ0FBbUIsQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ2hFLENBQUM7S0FBQTtJQUVLLFNBQVM7O1lBQ1gsT0FBTyxNQUFNLG9CQUFPLENBQUMsZUFBRSxDQUFDLEdBQUcsQ0FBQyxpQ0FBbUIsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQzNFLENBQUM7S0FBQTtJQUVLLEdBQUc7O1lBQ0wsTUFBTSxvQkFBTyxDQUFDLGVBQUUsQ0FBQyxLQUFLLENBQUMsaUNBQW1CLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxPQUFPLENBQUMsZUFBRSxDQUFDLEdBQUcsQ0FBQyxpQ0FBbUIsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ2pILENBQUM7S0FBQTtJQUVLLFFBQVE7O1lBQ1YsTUFBTSxvQkFBTyxDQUFDLGVBQUUsQ0FBQyxLQUFLLENBQUMsaUNBQW1CLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxPQUFPLENBQUMsZUFBRSxDQUFDLEdBQUcsQ0FBQyxpQ0FBbUIsQ0FBQyxZQUFZLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3JILENBQUM7S0FBQTtJQUNLLFFBQVE7O1lBQ1YsTUFBTSxvQkFBTyxDQUFDLGVBQUUsQ0FBQyxLQUFLLENBQUMsaUNBQW1CLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxPQUFPLENBQUMsZUFBRSxDQUFDLEdBQUcsQ0FBQyxpQ0FBbUIsQ0FBQyxjQUFjLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3ZILENBQUM7S0FBQTtDQUdKO0FBbkNELGdDQW1DQyJ9

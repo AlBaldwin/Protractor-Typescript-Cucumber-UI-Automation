@@ -1,29 +1,30 @@
 import { ElementFinder, element, by, $, browser } from "protractor";
+import { AngularSelectors } from "../locators/pageObjects";
 
 export class angularHomePage
 {
-    navigateTo() {
-        return browser.get('https://angular.io/') as Promise<any>;
+    async navigateTo() {
+        await browser.get('https://angular.io/');
       }
 
-    angularFeaturesLinkClick() {
-        return element(by.css("[title='Features']")).click() as Promise<any>;
+    async angularFeaturesLinkClick(){
+        await element(by.css(AngularSelectors.FEATURES_LINK)).click();
     }
 
-    angularLinkDisplays() {
-        return element(by.linkText("angular.io")).isDisplayed() as Promise<any>;
+    async angularLinkDisplays() {
+        await element(by.linkText(AngularSelectors.FEATURES_LINK)).isDisplayed();
     }
 
-    search(string) {
-        return element(by.css("input[type='search']")).sendKeys(string) as Promise<any>;
+    async search(text: string) {
+        await element(by.css(AngularSelectors.SEARCH_TB)).sendKeys(text);
     }
 
-    title() {
-        return element(by.css('#features--benefits')).isDisplayed() as Promise<any>
+    async title() {
+        await  element(by.css(AngularSelectors.TITLE)).isDisplayed();
     }
 
-    linkReturned(string){
-        return element(by.linkText(string)).isDisplayed() as Promise<any>
+    async linkReturned(link: string){
+        await  element(by.linkText(link)).isDisplayed();
     }
 
 }

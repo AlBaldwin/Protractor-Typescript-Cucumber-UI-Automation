@@ -1,35 +1,38 @@
 import { ElementFinder, element, by, browser } from "protractor";
+import { CalculatorSelectors } from "../locators/pageObjects";
 
 export class Calculator
 {
 
-    navigateTo() {
-        return browser.get('https://juliemr.github.io/protractor-demo/') as Promise<any>;
+    async navigateTo() {
+       await browser.get('https://juliemr.github.io/protractor-demo/');
       }
 
-    firstEditBox(value) {
-        return element(by.model("first")).sendKeys(value) as Promise<any>;
-    }
-    secondEditBox(value) {
-        return element(by.model("second")).sendKeys(value) as Promise<any>;
-    }
-    go() {
-        return element(by.id("gobutton")).click() as Promise<any>;
+    async firstEditBox(value: string) {
+        await element(by.model(CalculatorSelectors.FIRST_EDIT_BOX)).sendKeys(value);
     }
 
-    getResult() {
-        return element(by.css("td:nth-child(3)")).getText() as Promise<any>;
+    async secondEditBox(value: string) {
+        await element(by.model(CalculatorSelectors.SECOND_EDIT_BOX)).sendKeys(value);
+    }
+    
+    async go() {
+        await element(by.id(CalculatorSelectors.GO_BUTTON)).click(); 
     }
 
-    add() {
-        return element(by.model("operator")).element(by.css('[value="ADDITION"]')).click() as Promise<any>;
+    async getResult() {
+        return await element(by.css(CalculatorSelectors.GET_RESULT)).getText();
     }
 
-    subtract() {
-        return element(by.model("operator")).element(by.css('[value="SUBTRACTION"]')).click() as Promise<any>;
+    async add() {
+        await element(by.model(CalculatorSelectors.OPPERATOR)).element(by.css(CalculatorSelectors.ADDITION)).click();
     }
-    multiply() {
-        return element(by.model("operator")).element(by.css('[value="MULTIPLICATION"]')).click() as Promise<any>;
+
+    async subtract() {
+        await element(by.model(CalculatorSelectors.OPPERATOR)).element(by.css(CalculatorSelectors.SUBSTRACTION)).click();
+    }
+    async multiply() {
+        await element(by.model(CalculatorSelectors.OPPERATOR)).element(by.css(CalculatorSelectors.MULTIPLICATION)).click();
     }
 
 
